@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--    <SearchBar></SearchBar>-->
+<!--    <img alt="Vue logo" src="./assets/logo.png">-->
+    <DataList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DataList from './components/DataList.vue'
+import Vue from "vue";
+// import SearchBar from './components/SearchBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+      DataList
   }
 }
+Vue.config.productionTip = false
 </script>
 
 <style>
