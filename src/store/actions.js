@@ -69,7 +69,7 @@ export const fetchBreedsList = ({ commit }) => {
         })
 };
 
-export const fetchPaginatedBreeds = ({ commit, getters }, breeds) => {
+export const fetchFilteredBreeds = ({ commit, getters }, breeds) => {
     let promises = [];
 
     for (let [k, breed] of Object.entries(breeds)) {

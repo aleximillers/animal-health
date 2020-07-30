@@ -36,7 +36,7 @@
         methods: {
             onSearch(value) {
                 this.page = 0;
-                this.$store.dispatch('fetchPaginatedBreeds', value)
+                this.$store.dispatch('fetchFilteredBreeds', value)
             },
             async onPageChange (value) {
                 await this.$store.dispatch('fetchMoreBreeds', value)
